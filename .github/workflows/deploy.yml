@@ -37,8 +37,8 @@ jobs:
           file: ./backend/Dockerfile
           push: true
           tags: |
-            ghcr.io/docker-project/docker-backend:${{ env.IMAGE_TAG }}
-            ghcr.io/docker-project/docker-backend:latest
+            ghcr.io/docker_project:${{ env.IMAGE_TAG }}
+            ghcr.io/docker_project:latest
 
       - name: Build and push Frontend image
         uses: docker/build-push-action@v5
@@ -47,8 +47,8 @@ jobs:
           file: ./frontend/Dockerfile
           push: true
           tags: |
-            ghcr.io/docker-project/docker-frontend:${{ env.IMAGE_TAG }}
-            ghcr.io/docker-project/docker-frontend:latest
+            ghcr.io/docker_project:${{ env.IMAGE_TAG }}
+            ghcr.io/docker_project:latest
 
       - name: Setup kubectl
         uses: azure/setup-kubectl@v4
