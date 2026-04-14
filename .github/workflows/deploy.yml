@@ -37,7 +37,7 @@ jobs:
           file: ./backend/Dockerfile
           push: true
           tags: |
-            ghcr.io/docker-project/docker-backend:${IMAGE_TAG}
+            ghcr.io/docker-project/docker-backend:${{ env.IMAGE_TAG }}
             ghcr.io/docker-project/docker-backend:latest
 
       - name: Build and push Frontend image
@@ -47,7 +47,7 @@ jobs:
           file: ./frontend/Dockerfile
           push: true
           tags: |
-            ghcr.io/docker-project/docker-frontend:${IMAGE_TAG}
+            ghcr.io/docker-project/docker-frontend:${{ env.IMAGE_TAG }}
             ghcr.io/docker-project/docker-frontend:latest
 
       - name: Setup kubectl
