@@ -21,7 +21,7 @@ spec:
         - name: ghcr-login-secret
       containers:
         - name: docker-backend
-          image: ghcr.io/docker_project:${IMAGE_TAG}
+          image: ghcr.io/${{ github.repository_owner }}/docker-backend:${IMAGE_TAG}
           imagePullPolicy: Always
           ports:
             - containerPort: 3000

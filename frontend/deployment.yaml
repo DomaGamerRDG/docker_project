@@ -21,7 +21,7 @@ spec:
         - name: ghcr-login-secret
       containers:
         - name: docker-frontend
-          image: ghcr.io/docker_project:${IMAGE_TAG}
+          image: ghcr.io/${{ github.repository_owner }}/docker-frontend:${IMAGE_TAG}
           imagePullPolicy: Always
           ports:
             - containerPort: 80
