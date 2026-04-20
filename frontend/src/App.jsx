@@ -22,7 +22,7 @@ function App() {
     <main className="app-shell">
       <section className="generator-card">
         <h1>Random név generátor</h1>
-        <p>Kattints a gombra egy új névhez.</p>
+        <p>Kattints a gombra egy új névért.</p>
         <button type="button" onClick={fetchData} disabled={loading}>
           {loading ? "Betöltés..." : "Generálás"}
         </button>
