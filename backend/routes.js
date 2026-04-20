@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router()
 
-const FirstNames = ["John", "Jane", "Bob", "Alice", "Tom", "Sara", "Mike", "Emily", "David", "Olivia", "pam"];
-const LastNames = ["Smith", "Johnson", "Brown", "Taylor", "Anderson", "Wilson", "Clark", "Lewis", "Walker", "Hall", "Béla"];
+const FirstNames = ["John", "Jane", "Bob", "Alice", "Tom", "Sara", "Mike", "Emily", "David", "Pam"];
+const LastNames = ["Smith", "Johnson", "Brown", "Taylor", "Anderson", "Wilson", "Clark", "Lewis", "Walker", "Béla"];
 
 router.get('/name', async (req, res) => {
     try{
